@@ -1,18 +1,16 @@
 {
   "compilerOptions": {
     "target": "es5",
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
+    "rootDir": ".",
+    "outDir": "./build",
+    "baseUrl": ".",
+    "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
     "strict": true,
     "forceConsistentCasingInFileNames": true,
-    "noFallthroughCasesInSwitch": true,
     "module": "esnext",
     "moduleResolution": "node",
     "resolveJsonModule": true,
@@ -21,6 +19,9 @@
     "jsx": "react-jsx"
   },
   "include": [
-    "src"
+    "src",
+    "tests/App.test.tsx",
+    "tests/setupTests.ts",
+    "tests/index.tsx"
   ]
 }
