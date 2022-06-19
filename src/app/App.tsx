@@ -1,13 +1,8 @@
 import React from 'react'
-import { ApolloClient, ApolloProvider, InMemoryCache } from '@apollo/client'
-
+import { ApolloProvider } from '@apollo/client'
+import { client } from 'src/config'
 import Routes from 'src/routes'
-import config from 'src/config'
 
-const client = new ApolloClient({
-  uri: config.baseUrl,
-  cache: new InMemoryCache(),
-})
 function App() {
   return (
     <ApolloProvider client={client}>

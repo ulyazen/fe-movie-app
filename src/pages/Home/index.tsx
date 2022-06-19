@@ -1,12 +1,7 @@
 import React from 'react'
-
-import _ from 'lodash'
-
-import { useMovies } from 'src/hooks/use-movie'
+import { useMovies } from 'src/hooks/useQuery'
 
 export const Home = (): JSX.Element => {
-  //   const [auth, loadingAuth] = useAuth()
-
   const [movies, loading] = useMovies()
   if (loading) return <p>Loading...</p>
 

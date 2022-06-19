@@ -1,3 +1,9 @@
+export type Config = {
+  baseUrl: string
+  dev: string
+  production: string
+}
+
 export type User = {
   id: string
   name: string
